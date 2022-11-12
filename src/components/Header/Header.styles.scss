@@ -1,0 +1,15 @@
+@import "../Utilities/variables.scss";
+
+.header{
+    padding: 0 100px;
+}
+
+.icon-banner{
+    margin-top: 62px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+    background: $primary_1;
+}

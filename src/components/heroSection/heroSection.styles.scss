@@ -1,0 +1,19 @@
+.hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 99px;
+    margin-top: 130px;
+    
+    .hero-text{
+        width: 646px;
+        background: red;
+        height: 500px;
+    }
+    .hero-image{
+        width: 476px;
+        background: blue;
+        height: 500px;
+    }
+}
