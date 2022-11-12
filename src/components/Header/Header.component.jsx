@@ -13,7 +13,6 @@ const Header= () => {
         <div className='header'>
             <NavBar />
             <HeroSection />
-            
         </div>
         <div className='icon-banner'>
             <img src={icon1} alt="" />
