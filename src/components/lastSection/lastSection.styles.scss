@@ -1,0 +1,50 @@
+@import "../Utilities/variables.scss";
+
+.last-section{
+    background: $primary_1;
+    display: flex;
+    flex-direction: row;
+    gap: 7.78%;
+    padding: 100px 6.875% 100px 6.94%;
+
+    &>.text{
+        width: 43.18%;
+        max-width: 415px;
+        
+        &>h1{
+            padding-top: 86px;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 60px;
+            color: #fff;
+        }
+
+        &>p{
+            margin-top: 35px;
+            font-size: 18px;
+            line-height: 35px;
+            color: #fff;
+            margin-bottom: 57.55px;
+        }
+
+        a{
+            background: #fff;
+            text-decoration: none;
+            font-style: none;
+            color: $primary_3;
+            text-align: center;
+            border-radius: 8px;
+            padding: 14px 33px;
+        }
+    }
+
+    &>.image{
+        width: 56.82%;
+
+        &>img{
+            width: 100%;
+        }
+    }
+
+    
+}
