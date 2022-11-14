@@ -41,3 +41,27 @@ nav{
     }
 }
 
+
+@media screen and (max-width: 512px){
+    nav{
+
+        padding: 0 5%;
+
+        .nav-logo{
+            width: 100px;
+            
+            &>img{
+                width: 100%;
+            }
+        }
+        .navLinks{
+            display: none;
+        }
+        .connect-btn{
+            display: none;
+        }
+    }
+    
+    
+}
+

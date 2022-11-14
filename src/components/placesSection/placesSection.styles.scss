@@ -47,12 +47,30 @@
             &>.second-line{
                 margin-bottom: 9px;
             }
+        }
+    }    
+}
 
-            
+@media screen and (max-width: 512px){
+    .places-section{
+        padding: 50px 5%;
+
+        &>h1{
+            text-align: center;
+            font-weight: 600;
+            font-size: 32px;
+            line-height: normal;
         }
 
-        
-    }
+        &>.places-review{
+            display: grid !important;
+            grid-template-columns: 1fr;
 
-    
+            &>.places-card{
+                &:nth-child(5), &:nth-child(6), &:nth-child(7), &:nth-child(8){
+                    display: none;
+                } 
+            }
+        }
+    }
 }

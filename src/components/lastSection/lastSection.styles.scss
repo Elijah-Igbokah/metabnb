@@ -48,3 +48,40 @@
 
     
 }
+
+
+@media screen and (max-height: 512px) {
+    .last-section{
+        display: block;
+        padding: 50px 5%;
+
+        &>.text{
+            width: 100%;
+            max-width: 415px;
+
+            &>h1{
+                padding-top: 0;
+                font-weight: 600;
+                font-size: 32px;
+                line-height: normal;
+            }
+
+            &>p{
+                margin-top: 20px;
+                font-size: 14px;
+                line-height: 21px;
+                margin-bottom: 40px;
+            }
+        }
+        
+        &>.image{
+            margin-top: 50px;
+            width: 100%;
+    
+            &>img{
+                width: 100%;
+            }
+        }
+    }
+    
+}

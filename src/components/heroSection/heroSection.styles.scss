@@ -69,3 +69,27 @@
         }
     }
 }
+
+@media screen and (max-width: 512px){
+    .hero{
+        display: block;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;   
+        margin-top: 20px; 
+
+        .hero-text{
+            width: 100%;
+            text-align: center;
+        
+        }
+        .hero-image{
+            width: 100%;
+            margin-top: 20px;
+    
+            &>img{
+                width: 100%;
+            }
+        }
+    }
+}
