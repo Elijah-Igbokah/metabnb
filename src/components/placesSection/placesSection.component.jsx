@@ -1,6 +1,7 @@
 import React from 'react'
 import { PlacesPreview } from "../Utilities/placesList.jsx"
 import "./placesSection.styles.scss";
+import stars from "../../Images/Frame 59528.svg";
 
 const PlacesSection = () => {
   return (
@@ -14,15 +15,15 @@ const PlacesSection = () => {
                     return(
                         <div className='places-card'>
                             <img src={image} alt="" />
-                            <div>
+                            <div className='first-line'>
                                 <p>{title}</p>
-                                <p>{rate}</p>
+                                <p style={{fontWeight: 700}}>{rate}</p>
                             </div>
-                            <div>
+                            <div className='second-line'>
                                 <p>{distance}</p>
                                 <p>{availability}</p>
                             </div>
-                            <div></div>
+                            <div><img src={stars} alt="" /></div>
                         </div>
                     )
                 })
