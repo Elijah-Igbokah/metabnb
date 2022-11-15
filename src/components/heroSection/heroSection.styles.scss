@@ -76,11 +76,29 @@
         width: 100%;
         padding-left: 5%;
         padding-right: 5%;   
-        margin-top: 20px; 
+        margin-top: 0px; 
 
         .hero-text{
             width: 100%;
             text-align: center;
+
+            &>h1{
+                font-size: 48px;
+                line-height: 120%;
+                letter-spacing: -0.02em;
+                color: $primary_2;
+                margin-bottom: 20px;
+    
+                #color-text{
+                    color: $primary_3;
+                }
+            }
+            &>h2{
+                font-size: 20px;
+                line-height: 35px;
+                color: $primary_2;
+                margin-bottom: 20px;
+            }
         
         }
         .hero-image{
