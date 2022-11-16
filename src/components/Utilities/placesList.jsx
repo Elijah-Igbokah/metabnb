@@ -8,6 +8,13 @@ import place7 from "../../Images/Frame 151 (7).svg";
 import place8 from "../../Images/Frame 151 (8).svg";
 
 
+// ----------------------------------------------------//
+
+import image1 from "../../Images/second-page/Frame 151.png";
+import image2 from "../../Images/second-page/Frame 151 (1).png";
+import image3 from "../../Images/second-page/Frame 151 (2).png";
+
+
 export const PlacesPreview =[
     {
         image: `${place1}`,
@@ -73,4 +80,31 @@ export const PlacesPreview =[
         availability: "available for 2weeks stay",
         stars: 5
     }
+];
+
+export const PlacesFullList =[
+    {
+        image: `${image1}`,
+        title: "Desert king",
+        rate: "1MBT per night",
+        distance: "2345km away",
+        availability: "available for 2weeks stay",
+        stars: 5
+    },
+    {
+        image: `${image2}`,
+        title: "Desert king",
+        rate: "1MBT per night",
+        distance: "2345km away",
+        availability: "available for 2weeks stay",
+        stars: 5
+    },
+    {
+        image: `${image3}`,
+        title: "Desert king",
+        rate: "1MBT per night",
+        distance: "2345km away",
+        availability: "available for 2weeks stay",
+        stars: 5
+    },
 ];
