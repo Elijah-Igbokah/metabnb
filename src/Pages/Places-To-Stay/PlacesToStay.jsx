@@ -17,8 +17,7 @@ const PlacesToStay = () => {
             })
           }
         </div>
-        <div>
-          <div className='places-full-list'>
+        <div className='places-full-list'>
               {
                   PlacesFullList.map(({image, title, rate, distance, availability}) => {
                       return(
@@ -37,9 +36,8 @@ const PlacesToStay = () => {
                       )
                   })
               }
-          </div>
         </div>
-    </div>
+      </div>
   )
 }
 

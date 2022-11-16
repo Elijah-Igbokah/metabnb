@@ -1,11 +1,55 @@
+@import "../../components/Utilities//variables.scss";
+
 .places-to-stay{
 
     padding-left: 100px;
+    padding-bottom: 92px;
+    padding-top: 64px;
 
     .secondary-nav{
         display: flex;
         justify-content: flex-start;
         align-items: center;
         gap: 48px;
+    }
+    .places-full-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-top: 43px;
+        gap: 24px;
+
+        &>.places-card{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 16px;
+            border: 1px solid #D7D7D7;
+            border-radius: 15px;
+
+            &>img{
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+
+            &>.first-line, &>.second-line{
+                display: flex;
+                justify-content: space-between;
+
+                p{
+                    font-size: 12px;
+                    line-height: 13px;
+                    color: $primary_2;
+                }
+            }
+
+            &>.first-line{
+                margin-bottom: 10px;
+            }
+
+            &>.second-line{
+                margin-bottom: 9px;
+            }
+        }
     }
 }
