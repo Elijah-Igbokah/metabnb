@@ -1,7 +1,6 @@
 @import "../Utilities/variables.scss";
 
 nav{
-    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -41,8 +40,15 @@ nav{
     }
 }
 
+.modal-display{
+    display: block;
+}
 
-@media screen and (max-width: 512px){
+.modal-hidden{
+    display: none;
+}
+
+@media screen and (max-width: 1120px){
     nav{
 
         padding: 0 5%;
@@ -61,6 +67,8 @@ nav{
             display: none;
         }
     }
+
+    
     
     
 }

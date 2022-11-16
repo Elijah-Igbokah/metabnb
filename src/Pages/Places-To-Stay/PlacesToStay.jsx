@@ -3,6 +3,7 @@ import { SecondaryNav } from '../../components/NavBar/NavLinks';
 import { Link } from 'react-router-dom';
 import {PlacesFullList} from "../../components/Utilities/placesList";
 import stars from "../../Images/Frame 59528.svg";
+import settings from "../../Images/second-page/more/setting-5.svg";
 import "./placesToStay.styles.scss";
 
 const PlacesToStay = () => {
@@ -16,6 +17,25 @@ const PlacesToStay = () => {
               )
             })
           }
+          <div className='filter'>
+            <div>Location</div>
+            <img src={settings} alt="" />
+          </div>
+        </div>
+        <div className="dropdown-nav" >
+          <select>
+            {
+              SecondaryNav.map((link) => {
+                return(
+                  <option> {link.linkTitle} </option>
+                )
+              })
+            }
+          </select>
+          <div className='filter'>
+            <div>Location</div>
+            <img src={settings} alt="" />
+          </div>
         </div>
         <div className='places-full-list'>
               {

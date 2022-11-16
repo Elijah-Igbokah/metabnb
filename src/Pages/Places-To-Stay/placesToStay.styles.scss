@@ -3,21 +3,58 @@
 .places-to-stay{
 
     padding-left: 100px;
+    padding-right: 5%;
     padding-bottom: 92px;
     padding-top: 64px;
 
     .secondary-nav{
         display: flex;
+        flex-direction: row;
         justify-content: flex-start;
         align-items: center;
         gap: 48px;
+        
+
+        .filter{
+            padding: 12px 16px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 19px;
+            text-align: center;
+            gap: 40px;
+            color: #333333;
+            border: 1px solid #B4B4B4;
+            border-radius: 8px;
+        }
     }
+
+    .dropdown-nav{
+        display: none;
+
+        .filter{
+            padding: 12px 16px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            line-height: 19px;
+            /* identical to box height, or 120% */
+
+            text-align: center;
+
+            color: #333333;
+        }
+    }
+
     .places-full-list{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         padding-top: 43px;
         gap: 24px;
+        justify-content: center;
 
         &>.places-card{
             display: flex;
@@ -53,3 +90,35 @@
         }
     }
 }
+
+
+
+
+@media screen and (max-width: 1020px) {
+    .places-to-stay{
+        padding: 64px 5%;
+
+        .secondary-nav{
+            display: none;
+        }
+        .dropdown-nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            .filter{
+                gap: 40px;
+                border: 1px solid #B4B4B4;
+                border-radius: 8px;;
+            }
+
+            select{
+                padding: 10px 5px;
+                font-size: 1.2rem;
+            }
+            
+        }
+    }
+    
+}
+
