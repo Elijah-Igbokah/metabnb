@@ -17,7 +17,7 @@ const NavBar = () => {
         {
           NavLinks.map((link) => {
             return(
-              <NavLink> {link.linkTitle} </NavLink>
+              <NavLink to={link.href}> {link.linkTitle} </NavLink>
             )
           })
         }

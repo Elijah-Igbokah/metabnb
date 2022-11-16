@@ -1,9 +1,11 @@
 export const NavLinks = [
     {
-        linkTitle: "Home"
+        linkTitle: "Home",
+        href: "/"
     },
     {
-        linkTitle: "Place to stay"
+        linkTitle: "Place to stay",
+        href: "/placesToStay"
     },
     {
         linkTitle: "NFTs"

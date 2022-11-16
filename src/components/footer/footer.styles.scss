@@ -1,0 +1,128 @@
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: #1D1D1E;
+    padding-top: 58px;
+    padding-left: 113px;
+    padding-bottom: 37px;
+
+    .first-row{
+        display: flex;
+        flex-direction: column;
+
+        .footer-logo{
+            width: 233px;
+            margin-bottom: 96px;
+
+            &>img{
+                width: 100%;
+            }
+        }
+
+        .socials{
+            display: flex;
+            flex-direction: row;
+            gap: 32px;
+            margin-bottom: 55px;
+
+            &>img{
+                width: 18px;
+            }
+        }
+
+        #copyright{
+            width: 113px;
+        }
+
+    }
+
+    .second-row, .third-row, .fourth-row{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+
+        .column-heading{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+            margin-bottom: 23px;
+        }
+
+        .list-items{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+
+            &>li{
+                font-size: 14px;
+                line-height: 35px;
+                color: #F1F3F9;;
+            }
+
+        }
+    }
+}
+
+
+@media screen and (max-width: 512px) {
+    
+    .footer{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 37px;
+
+        .first-row{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            // align-items: center;
+    
+            .footer-logo{
+                width: 40%;
+                margin-bottom: 0;
+            }
+    
+            .socials{
+                width: 40%;
+                display: flex;
+                flex-direction: row;
+                gap: 16px;
+                margin-bottom: 0;
+    
+                &>img{
+                    width: 18px;
+                }
+            }
+    
+            #copyright{
+                width: 30%;
+            }
+    
+        }
+    
+        .second-row, .third-row, .fourth-row{
+    
+            .column-heading{
+                margin-bottom: 5px;
+            }
+    
+            .list-items{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+    
+                &>li{
+                    font-size: 14px;
+                    line-height: 35px;
+                    color: #F1F3F9;;
+                }
+    
+            }
+        }
+    }
+}

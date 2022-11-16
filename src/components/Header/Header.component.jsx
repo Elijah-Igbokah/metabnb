@@ -1,6 +1,5 @@
 import React from 'react'
 import HeroSection from '../heroSection/heroSection.component';
-import NavBar from '../NavBar/navbar.component';
 import "./Header.styles.scss";
 
 import icon1 from "../../Images/Group 59537.svg";
@@ -11,7 +10,6 @@ const Header= () => {
   return (
     <div>
         <div className='header'>
-            <NavBar />
             <HeroSection />
         </div>
         <div className='icon-banner'>
