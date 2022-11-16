@@ -18,9 +18,9 @@ const NavBar = () => {
 
     <div>
       <nav>
-        <div className='nav-logo'>
+        <Link to="/" className='nav-logo'>
           <img src={Logo} alt="" />
-        </div>
+        </Link>
         <div className='navLinks'>
           {
             NavLinks.map((link) => {

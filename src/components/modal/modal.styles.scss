@@ -76,3 +76,13 @@
     display: none;
 }
 
+
+@media screen and (max-width: 1120px){
+    .modal-wrapper{
+
+        .modal{
+            width: 90%;
+        }
+    }
+}
+
