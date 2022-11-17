@@ -5,6 +5,7 @@ import HamburgerMenu from '../hamburger/hamburger-menu.component';
 import "./navbar.styles.scss";
 import xIcon from "../../Images/second-page/more/x.svg";
 import hamburger from "../../Images/second-page/more/icons8-menu-30.png";
+import Modal from '../modal/modal.component';
 
 import { NavLinks } from './NavLinks';
 
@@ -13,6 +14,10 @@ const NavBar = () => {
   const [modal, setModal] = useState(false);
 
   const toggleModal = () =>{
+    setModal(!modal);
+  };
+
+  const closeModal = () =>{
     setModal(!modal);
   };
 
@@ -36,7 +41,7 @@ const NavBar = () => {
           }
         </div>
         <div>
-          <Link className="connect-btn" onClick={toggleModal} >Connect Wallet</Link>
+          <Link className="connect-btn" onClick={toggleModal}>Connect Wallet</Link>
         </div>
         <div className='hamburger-icons'>
           <img className={ toggleHamburger ? 'hamburger-icon-hidden' : 'hamburger-icon'} src={hamburger} alt=""  onClick={()=>setToggleHamburger(!toggleHamburger)}/>
@@ -45,9 +50,10 @@ const NavBar = () => {
         
         
       </nav>
-      <div className={ toggleHamburger ? 'hamburger-display' : 'hamburger-icon-hidden'}>
-        <HamburgerMenu/>
+      <div className={ toggleHamburger ? 'hamburger-display' : 'hamburger-icon-hidden'} onClick={()=>setToggleHamburger(!toggleHamburger)}>
+        {toggleHamburger ? <HamburgerMenu closeModal={closeModal} /> : null }
       </div>
+      {modal ? <Modal closeModal={closeModal} /> : null}
     </div>
     
     

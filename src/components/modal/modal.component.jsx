@@ -1,4 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import cancel from "../../Images/second-page/more/x.svg";
 import { Link } from 'react-router-dom';
 import "./modal.styles.scss";
@@ -6,20 +7,14 @@ import metamask from "../../Images/second-page/more/Frame 195.png";
 import walletconnect from "../../Images/second-page/more/Frame 195 (1).png";
 import pointer from "../../Images/second-page/more/Down Chevron.png";
 
-const Modal = () => {
+const Modal = (Props) => {
 
-    const [modal, setModal] = useState(false);
-
-    const closeModal = () => {
-        setModal(!modal)
-    };
-
-  return (
-    <div className={modal ? "modal-hidden" : 'modal-wrapper'}>
+  return ReactDOM.createPortal (
+    <div className='modal-wrapper'>
         <div className='modal'>
             <div className='first-line'>
                 <h2>Connect Wallet</h2>
-                <img src={cancel} alt="" onClick={closeModal} />
+                <img src={cancel} alt="" onClick={Props.closeModal} />
             </div>
             <div className="second-line">
                 <p>Choose your preferred wallet:</p>
@@ -33,7 +28,8 @@ const Modal = () => {
                 </Link>
             </div>
         </div>
-    </div>
+    </div>,
+    document.getElementById("modal-root")
     
   )
 }

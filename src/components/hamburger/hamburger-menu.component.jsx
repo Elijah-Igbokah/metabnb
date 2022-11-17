@@ -3,7 +3,7 @@ import { NavLinks } from '../NavBar/NavLinks';
 import { NavLink, Link } from "react-router-dom";
 
 
-const HamburgerMenu =()=>{
+const HamburgerMenu =(Props)=>{
     return(
         <div className="hamburger-link-container">
             <div className="hamburger-links">
@@ -18,7 +18,7 @@ const HamburgerMenu =()=>{
                         }
                     </div>
                     <div>
-                        <Link className="connect-btn" >Connect Wallet</Link>
+                        <Link className="connect-btn" onClick={Props.closeModal}>Connect Wallet</Link>
                     </div>
                 </div>                   
             </div>
