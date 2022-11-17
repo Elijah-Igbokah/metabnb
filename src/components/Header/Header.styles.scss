@@ -12,6 +12,17 @@
     background: $primary_1;
 }
 
+@media screen and (max-width: 1112px){
+    .icon-banner{
+        width: 100%;
+        padding: 10px 5%;
+        
+        &>img{
+            width: 30%;
+        }
+    }
+}
+
 
 @media screen and (max-width: 512px){
     .icon-banner{
