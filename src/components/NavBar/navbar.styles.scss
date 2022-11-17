@@ -6,6 +6,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0 100px;
+    z-index: 10;
   
 
     .nav-logo{
@@ -48,28 +49,59 @@ nav{
     display: none;
 }
 
-@media screen and (max-width: 1120px){
-    nav{
+.hamburger-display{
+    display: none;
+}
 
+.hamburger-icons{
+    display: none;
+}
+
+@media screen and (max-width: 1120px){
+
+    .hamburger-icons{
+        display: block;
+        z-index: 100;
+    }
+    nav{
         padding: 0 5%;
+        z-index: 100;
 
         .nav-logo{
             width: 100px;
+            z-index: 100;
+
             
             &>img{
                 width: 100%;
+                z-index: 100;
             }
         }
         .navLinks{
             display: none;
         }
+
         .connect-btn{
-            padding: 10px 21px 8px 22px;
+            display: none;
         }
+        // .connect-btn{
+        //     padding: 10px 21px 8px 22px;
+        // }
+    }
+
+    .hamburger-display{
+        display: block;
     }
 
     
-    
-    
 }
+
+.hamburger-icon{
+    display: block;
+}
+
+.hamburger-icon-hidden{
+    display: none;
+}
+
 

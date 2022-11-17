@@ -1,0 +1,59 @@
+@import "../Utilities//variables.scss";
+
+.hamburger-link-container{
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: white;
+    min-height: 150vh;
+    padding: 5%;
+    z-index: 10;
+
+    .hamburger-links{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .hamburger-list{
+            width: 50%;
+
+            h3{
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                color: #40196d;
+                margin-bottom: 10px;
+            }
+            .hamburger-link{
+
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                gap: 20px;
+                margin-bottom: 100px;
+
+                & > li{
+                    margin-bottom: 10px;
+                }
+                a{
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+
+            .connect-btn{
+                background: $primary_1;
+                padding: 15px 26px 13px 27px;
+                border-radius: 10px;
+                color: #ffffff;
+                line-height: 20px;
+            }
+        }
+
+        
+    }
+
+}
+
+
